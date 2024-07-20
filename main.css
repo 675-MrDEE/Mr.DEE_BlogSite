@@ -1,5 +1,32 @@
 header{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    font-size: xx-large;
-    text-shadow: 2px 2px 3px lightGrey;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px seagreen;
+    font-weight: bolder;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+
+}
+
+body{
+    background: linear-gradient(30deg, grey, lightYellow, lightBlue);
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+#introduction{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+li{
+    margin-left: 30px;
+    line-height: 2em;
+}
+
+.indent1{
+    margin-left: 30px;
 }
