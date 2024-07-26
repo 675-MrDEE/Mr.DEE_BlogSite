@@ -1,55 +1,68 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mr.DEE's BLOG</title>
-    <script src="main.js" defer></script>
-    <link href="main.css" rel="stylesheet">
-</head>
-
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mr.Dee's Blog Site</title>
+    <link rel="stylesheet" href="main.css" />
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
     <header>
-        WELCOME TO MR.DEE's BLOG!
+      <h1>Welcome to Mr. Dee's Corner of the Internet!</h1>
+     
     </header>
-    <p id="introduction">
+    <main class="container">
+      <nav>
+        <ul class="tabs">
+          <li><a href="#home" class="tab active">HOME</a></li>
+          <li><a href="#hobbies" class="tab">HOBBIES</a></li>
+          <li><a href="#interests" class="tab">INTERESTS</a></li>
+          <li><a href="#projects" class="tab">PROJECTS</a></li>
+        </ul>
+      </nav>
+      <article id="home">
+        <h2>Home Page Content</h2>
+        <p>
+          Web development is a constantly evolving field that combines
+          creativity with technical skills. In this post, we'll explore the
+          fundamentals of HTML, CSS, and JavaScript, and how they work together
+          to create stunning websites.
+        </p>
+      </article>
 
-        <strong>Welcome to My Journey!</strong><br>
-        <br>
+      <article id="hobbies">
+        <h2>Hobbies Page Content</h2>
+        <p>
+          CSS layouts can be tricky, but with the right techniques, you can
+          create responsive and beautiful designs. We'll dive into flexbox,
+          grid, and other modern CSS layout methods to help you build
+          professional-looking websites.
+        </p>
+      </article>
 
-        Hello, and welcome to my little corner of the internet! I'm a passionate chemist from the beautiful country of
-        Papua New Guinea, and I've created this blog to share my journey, interests, and aspirations with you.
-        <br>
-        <br> <em><u>About Me</u></em><br>
-        I recently graduated with a degree in Chemistry and am currently on the lookout for job opportunities. While I
-        navigate this exciting yet challenging phase of my life, I've decided to document my experiences, hobbies, and
-        ideas here.<br><br>
-    <ul><strong>What You'll Find Here</strong><br>
-    <br><li><em>Daily Life:</em> Join me as I share the ups and downs of my daily adventures, from the mundane to the extraordinary.
-    </li>
-    <li><em>Hobbies:</em> Discover my passions, from DIY projects to exploring the wonders of chemistry in everyday life.</li>
-    <li><em>Community Initiatives:</em> I'm deeply committed to helping the youth and supporting unfortunate families, women, and
-        children in our communities. Here, I'll share my plans, progress, and how you can get involved.</li>
-    <li><em>DIY Projects:</em> I love getting hands-on with creative projects. Whether it's crafting, building, or experimenting,
-        I'll guide you through my DIY endeavors.</li>
-    <li><em>Personal Growth:</em> As I work towards my professional goals, I'll also share insights and tips on personal
-        development and career growth.</li> </ul><br>
-    <div class="indent1">
-        <strong>Why This Blog?</strong><br>
-        <br>
-    This blog is more than just a diary; it's a platform to connect, inspire, and make a difference. I believe in the
-    power of community and the importance of giving back. Through this space, I hope to reach out to like-minded
-    individuals, share knowledge, and foster a supportive network.
-    <br><br>
-    <em><u>Join Me</u></em><br>
+      <article id="interests">
+        <h2>Interests Page Content</h2>
+        <p>
+          JavaScript is the powerhouse behind interactive web experiences. In
+          this comprehensive guide, we'll cover everything from basic syntax to
+          advanced concepts like asynchronous programming and DOM manipulation.
+        </p>
+      </article>
 
-    I invite you to join me on this journey. Together, we can explore new ideas, support each other, and make a positive
-    impact in our communities. Thank you for visiting, and I look forward to sharing this exciting adventure with you!
-    </div>
-    
-    </p>
-
-</body>
-
+      <article id="projects">
+        <h2>Projects Page Content</h2>
+        <p>
+          In today's multi-device world, responsive design is more important
+          than ever. Learn how to create websites that look great on everything
+          from smartphones to large desktop monitors.
+        </p>
+      </article>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
