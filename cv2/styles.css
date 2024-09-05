@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(cool-pics/my-robot-pet-it-can-sit-play-and-fetch-v0-rtdymb651bwc1.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#header-style {
+  background: linear-gradient(45deg, lemonchiffon, grey);
+  text-shadow: 1px 1px 3px lemonchiffon;
+  text-align: center;
+}
+
+#footer-style {
+  background: linear-gradient(45deg, lemonchiffon, grey);
+  text-shadow: 1px 1px 3px lemonchiffon;
+  text-align: center;
+  font-size: small;
+  font-weight: lighter;
+  margin-top: 440px !important;
+}
+
+p {
+  color: white;
+  background-color: grey;
+  text-shadow: 1px 1px 1px lightblue;
+  opacity: 85%;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #8b04b473 !important;
+  border: none !important;
+}
+
+.bg-lemonchiffon {
+  background: linear-gradient(
+    45deg,
+    lemonchiffon,
+    rgb(139, 4, 180, 0.1),
+    rgb(0, 0, 255, 0.2)
+  ) !important;
+}
+
+.formal-work-bg {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 230, 6, 0.15),
+    rgb(128, 128, 128, 0.15)
+  );
+}
+
+@media (max-width: 415px) {
+  body {
+    font-size: small !important;
+  }
+
+  button {
+    font-size: small !important;
+  }
+
+  .accordion-body {
+    font-size: small !important;
+  }
+
+  #footer-style {
+    background: linear-gradient(45deg, lemonchiffon, grey);
+    text-shadow: 1px 1px 3px lemonchiffon;
+    text-align: center;
+    font-size: xx-small;
+    font-weight: lighter;
+    margin-top: 200px !important;
+  }
+
+  #main-collapse-button-cv header {
+    font-size: small;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 560px) {
+  b {
+    font-size: large !important;
+    margin-left: 10px !important;
+    text-shadow: 1px 2px 2px lightgrey;
+  }
+}
+
+.accordion-body {
+  font-size: small !important;
+  background: linear-gradient(45deg, lemonchiffon, lightblue) !important;
+}
+
+button {
+  font-size: small !important;
+}
+
+#main-collapse-button-cv {
+  cursor: pointer;
+}
+
+.navbar:hover {
+  background: linear-gradient(180deg, darkgrey, darkslategrey) !important;
+  text-shadow: 1px 1px 1px black;
+  color: lightblue !important;
+  cursor: pointer;
+  border-bottom:thin solid yellow;
+}
+
+#main-collapse-button-cv #header-style:hover {
+  color: blue;
+  text-shadow: 1px 2px 2px lightblue;
+  background: linear-gradient(180deg, lightgrey, grey);
+}
+
+.accordion-header :hover {
+  color: blue;
+  text-shadow: 1px 2px 2px lightblue;
+}
+
+.container button:hover {
+  color: blue;
+  text-shadow: 1px 2px 2px lightblue;
+  background: linear-gradient(45deg, yellow, orange) !important;
+  box-shadow: 3px 3px 5px lightblue !important;
+}
+
+#link-button:hover {
+  color: darkblue;
+  text-shadow: 1px 1px 2px lemonchiffon;
+  background: linear-gradient(180deg, lightgreen, green) !important;
+  box-shadow: 2px 2px 5px lemonchiffon !important;
+}
