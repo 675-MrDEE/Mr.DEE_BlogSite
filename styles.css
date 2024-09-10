@@ -1,6 +1,10 @@
 body {
-  background-image: url(bg-hp.jpg?v=1.001);
+  background-image: url(bg-hp.jpg?v=1.001) !important;
   background-position: center;
+}
+
+.bg-special-001{
+  background-color: rgb(240, 248, 255,0.75);
 }
 
 button.navbar-toggler {

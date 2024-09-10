@@ -15,3 +15,9 @@ tabs.forEach((tab) => {
     target.classList.add("active");
   });
 });
+
+/* page refresh button */
+/* document.getElementById("refreshButton").addEventListener("click", function () {
+  
+  location.reload();
+}); */
