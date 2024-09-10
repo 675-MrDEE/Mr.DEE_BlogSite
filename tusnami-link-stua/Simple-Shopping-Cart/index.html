@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart with Invoice</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card {
+            margin: 20px;
+        }
+        .cart-list, .invoice-list {
+            margin-top: 20px;
+        }
+        .total-cost {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Shopping Cart with Invoice</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Item 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Item 1</h5>
+                        <p class="card-text">$10.00</p>
+                        <button class="btn btn-primary add-to-cart" data-item="Item 1" data-price="10">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Item 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Item 2</h5>
+                        <p class="card-text">$15.00</p>
+                        <button class="btn btn-primary add-to-cart" data-item="Item 2" data-price="15">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Item 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Item 3</h5>
+                        <p class="card-text">$20.00</p>
+                        <button class="btn btn-primary add-to-cart" data-item="Item 3" data-price="20">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center">Cart</h2>
+        <ul class="list-group cart-list">
+            <!-- Cart items will be added here -->
+        </ul>
+        <p class="total-cost text-end">Total: $<span id="total-price">0.00</span></p>
+        <a href="#" id="whatsapp-link" target="_blank" class="btn btn-success">Create Invoice & Send to WhatsApp</a>
+
+        <h2 class="text-center">Invoice</h2>
+        <ul class="list-group invoice-list">
+            <!-- Invoice items will be listed here -->
+        </ul>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script>
+        let totalPrice = 0;
+        const cartItems = [];
+
+        $(document).ready(function() {
+            $('.add-to-cart').click(function() {
+                const item = $(this).data('item');
+                const price = parseFloat($(this).data('price'));
+
+                // Add item to cart and update total price
+                $('.cart-list').append(`<li class="list-group-item">${item} - $${price.toFixed(2)}</li>`);
+                totalPrice += price;
+                $('#total-price').text(totalPrice.toFixed(2));
+
+                // Store item in cartItems array
+                cartItems.push({ item: item, price: price });
+            });
+
+            $('#whatsapp-link').click(function() {
+                let invoiceMessage = "Invoice:\n";
+                cartItems.forEach(item => {
+                    invoiceMessage += `${item.item} - $${item.price.toFixed(2)}\n`;
+                });
+                invoiceMessage += `\nTotal: $${totalPrice.toFixed(2)}`;
+
+                const phoneNumber = "67573507811";
+                const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(invoiceMessage)}`;
+
+                $(this).attr('href', whatsappURL);
+            });
+        });
+    </script>
+</body>
+</html>
+

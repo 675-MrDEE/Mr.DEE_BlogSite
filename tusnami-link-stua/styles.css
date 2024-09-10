@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-lightBlue {
+  background: linear-gradient(45deg, lightblue, lightYellow, lemonChiffon);
+  color: grey;
+}
+
+header {
+  text-shadow: 1px 1px 3px lightgrey;
+  color: darkslategrey!important;
+  box-shadow: 1px 1px 2px grey;
+  margin-bottom: 3px !important;
+  letter-spacing: 1px;
+  
+}
+
+header .badge{
+    font-size: 0.5em !important;
+    vertical-align: top !important;
+    margin-top: 3px;
+    background: linear-gradient(0deg, orange, darkslateblue);
+    box-shadow: 1px 1px 2px grey !important;
+}
+
+footer{
+    color: white;
+    font-size: small;
+    margin-bottom: 10px !important;
+    box-shadow: 1px 1px 2px grey !important;
+    /* text-shadow: 1px 1px 2px darkslateblue !important; */
+}
+
+#footer-mail {
+  text-decoration: none;
+  cursor: pointer;
+  font-style: italic;
+}
+
+#footer-number {
+    text-decoration: none !important;
+    cursor: pointer !important;
+    font-style: italic !important;
+  }

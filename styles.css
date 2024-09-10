@@ -1,6 +1,14 @@
 body {
-  background-image: url(cool-pics/_7e56b63b-155f-4be7-af30-4c1ac7b9f159.jpg);
+  background-image: url(cv2/cool-pics/_7e56b63b-155f-4be7-af30-4c1ac7b9f159.jpg);
   background-position: center;
+}
+
+button.navbar-toggler {
+  box-shadow: 1px 2px 3px rgb(211, 211, 211, 0.5) !important;
+}
+
+button.navbar-toggler:hover {
+  box-shadow: 1px 2px 3px darkslategrey !important;
 }
 
 h4 {
