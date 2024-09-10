@@ -1,14 +1,16 @@
 body {
-  background-image: url(cv2/cool-pics/_7e56b63b-155f-4be7-af30-4c1ac7b9f159.jpg);
+  background-image: url(cv2/cool-pics/_7e56b63b-155f-4be7-af30-4c1ac7b9f159.jpg?v=1.001);
   background-position: center;
 }
 
 button.navbar-toggler {
   box-shadow: 1px 2px 3px rgb(211, 211, 211, 0.5) !important;
+  border: thin solid darkslategrey;
 }
 
 button.navbar-toggler:hover {
   box-shadow: 1px 2px 3px darkslategrey !important;
+  border: thin solid darkslategrey;
 }
 
 h4 {
@@ -72,17 +74,28 @@ li:hover {
 .navbar-brand:hover {
   text-shadow: 2px 2px 10px white !important;
 }
-
+/* senism style blo navbar taim hover */
 .navbar:hover {
   box-shadow: 2px 2px 10px rgb(253, 165, 1) !important;
   background: linear-gradient(
     180deg,
-    darkslategrey,
-    goldenrod,
-    white
+    rgba(35, 97, 97, 0.8),
+    rgb(146, 129, 87),
+    rgba(35, 97, 97, 0.8)
   ) !important;
 }
 
+.navbar:hover ~ #footer{
+  box-shadow: 2px 2px 10px rgb(253, 165, 1) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(35, 97, 97, 0.8),
+    rgb(146, 129, 87),
+    rgba(35, 97, 97, 0.8)
+  ) !important;
+}
+
+/* senism style blo text insait lo navabar dropdown menu taim hover */
 .nav-link:hover {
   color: rgb(3, 130, 168) !important;
   text-shadow: 1px 2px 3px white !important;
