@@ -1,0 +1,106 @@
+body {
+  background-color: aliceblue;
+  background-image: url(bg-brick-light.jpg);
+  margin-bottom: 30px;
+}
+
+/* @media (max-width: 321px) {
+    
+  
+    .navbar-toggler-icon{
+      width: 15px;
+      margin: -5px;
+    }
+    .navbar-brand{
+      font-size: small;
+    }
+   body{
+      width: 320px;
+   }
+  }
+ */
+@media (max-width: 400px) {
+  .navbar-toggler-icon {
+    width: 15px;
+    margin: -5px;
+  }
+
+  .navbar-brand {
+    font-size: small;
+  }
+
+  body {
+    width: 380px;
+    font-size: small !important;
+  }
+
+  #exercise-content {
+    font-size: smaller;
+  }
+
+  #solution-content {
+    font-size: small;
+    text-align: left;
+  }
+
+  footer {
+    font-size: x-small !important;
+  }
+}
+
+.btn-success {
+  background-color: olivedrab;
+}
+
+.btn-success:hover {
+  background: linear-gradient(180deg, rgb(156, 207, 17), rgb(204, 224, 218));
+  box-shadow: 2px 2px 10px grey !important;
+  border: thin solid rgba(253, 83, 125, 0.363) !important;
+  color: olive;
+  text-shadow: 1px 1px 1px lightgrey;
+}
+
+.btn-info {
+  color: rgb(32, 38, 128);
+  text-shadow: 1px 2px 3px white;
+  background-color: cadetblue;
+  box-shadow: 1px 2px 10px darkslategrey !important;
+}
+
+.text-modal {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.modal-body,
+.modal-header,
+.modal-footer {
+  background-color: rgb(160, 172, 0);
+}
+
+.modal-title {
+  text-shadow: 1px 2px 3px rgb(42, 78, 8);
+}
+
+.book-ref {
+  color: black;
+  text-shadow: 1px 2px 3px white !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* .accordion{
+  margin-bottom: 20px !important;
+} */
+
+@media (min-width: 500px) {
+  [top-spacer] {
+    margin-top: 100px !important;
+  }
+
+  [book-ref-icon]{
+    width: 90%;
+  }
+}
