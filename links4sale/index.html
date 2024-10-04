@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME | 675Mr.DEE</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css?v=1.001" />
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.css" />
+    <script src="script.js?v=1.001" defer></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md bg-dark fixed-top navbar-dark bg-gradient"
+      id="refreshButton"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand"
+          >&nbsp⚜️ 675Mr.DEE &copy | Buy Me Coffee
+        </a>
+        <button
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler p-1 m-2"
+        >
+          <span
+            class="navbar-toggler-icon"
+            style="width: 20px !important; height: 20px !important"
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav ms-auto gap-1"
+            style="text-shadow: 1px 2px 3px black"
+          >
+            <li class="nav-item bg-light">
+              <a data-tab-target="#blog-container" class="nav-link active">Courses</a>
+            </li>
+            <li class="nav-item bg-light">
+              <a
+                data-tab-target="#companies-organization-content"
+                class="nav-link"
+                >TV Shows</a
+              >
+            </li>
+            <li class="nav-item bg-light">
+              <a data-tab-target="#project-proposals-content" class="nav-link">
+                Games & Softwares</a
+              >
+            </li>
+            <li class="nav-item bg-light">
+              <a data-tab-target="#sales-advertisement-content" class="nav-link"
+                >Website Templates</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- spacer ... blo separatim body content wantem navbar -->
+    <div class="container mt-5 mb-3">&nbsp</div>
+    <!-- body content -->
+    <!-- blog container -->
+    <div
+      class="container bg-special-001 p-3 ms-sm-5 me-sm-5 active"
+      id="blog-container"
+      data-tab-content
+    >
+    <div class="row g-5">
+      <div class="col-md-3">
+        <div class="card shadow text-bg-primary">
+          <img
+            src="../cool-pics/1LGh7YCa.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Udemy - The Complete Microsoft Excel Data Analysis Bootcamp</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+              sequi placeat ipsam quod vitae nulla quam eius deserunt dignissimos
+              corrupti!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow text-bg-danger">
+          <img
+            src="../cool-pics/1LGh7YCa.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+              sequi placeat ipsam quod vitae nulla quam eius deserunt dignissimos
+              corrupti!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow text-bg-warning">
+          <img
+            src="../cool-pics/1LGh7YCa.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+              sequi placeat ipsam quod vitae nulla quam eius deserunt dignissimos
+              corrupti!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card shadow text-bg-dark">
+          <img
+            src="../cool-pics/1LGh7YCa.jpg"
+            class="card-img-top"
+            alt=""
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima
+              sequi placeat ipsam quod vitae nulla quam eius deserunt dignissimos
+              corrupti!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- spacer ... blo separatim body wantem lek -->
+    <div style="margin-top: 150px"></div>
+    <!-- footer -->
+    <div
+      class="container fixed-bottom text-bg-dark bg-gradient p-3 fw-lighter h6 d-flex justify-content-center"
+      id="footer"
+    >
+      Website by:
+      <a href="mailto:675mrdee@gmail.com">675Mr.DEE &copy 2024</a> &nbsp|&nbsp
+      Ph: (+675) 73 507 811
+    </div>
+
+    <script src="tex-mml-chtml.js"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+  </body>
+</html>
