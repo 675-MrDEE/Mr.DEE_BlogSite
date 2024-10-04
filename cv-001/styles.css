@@ -5,8 +5,8 @@
 }
 
 body {
-  background-image: url(cool-pics/my-robot-pet-it-can-sit-play-and-fetch-v0-rtdymb651bwc1.webp);
-  background-repeat: no-repeat;
+  background-image: url(bg-brick-light.jpg);
+  background-repeat: repeat;
   background-position: center;
   background-size: cover;
 }
